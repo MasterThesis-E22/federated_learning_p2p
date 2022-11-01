@@ -53,7 +53,7 @@ def mnist_execution(n, start, simulation, conntect_to=None, iid=True):
 
     # Start Learning
     if start:
-        nodes[0].set_start_learning(rounds=10, epochs=2)
+        nodes[0].set_start_learning(rounds=3, epochs=1)
     else:
         time.sleep(20)
 
@@ -73,5 +73,5 @@ def mnist_execution(n, start, simulation, conntect_to=None, iid=True):
 
 if __name__ == "__main__":
     for _ in range(50):
-        mnist_execution(1, True, True)
+        mnist_execution(2, True, True)
         break
